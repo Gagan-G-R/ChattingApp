@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    tools:context=".RegActivity" >
+
+    <EditText
+        android:id="@+id/ID_UN_RL"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/circular_boundries"
+        android:ems="10"
+        android:hint="User Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textSize="25sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ID_EM_RL"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/circular_boundries"
+        android:ems="10"
+        android:hint="E_mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/ID_UN_RL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ID_UN_RL"
+        app:layout_constraintTop_toBottomOf="@+id/ID_UN_RL" />
+
+    <EditText
+        android:id="@+id/ID_PW_RL"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/circular_boundries"
+        android:ems="10"
+        android:hint="Password( 6 char min)"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/ID_EM_RL"
+        app:layout_constraintStart_toStartOf="@+id/ID_EM_RL"
+        app:layout_constraintTop_toBottomOf="@+id/ID_EM_RL" />
+
+    <Button
+        android:id="@+id/ID_BT_RL"
+        android:layout_width="0dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/circular_buttons"
+        android:text="Register"
+        android:textColor="@android:color/background_light"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/ID_PW_RL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ID_PW_RL"
+        app:layout_constraintTop_toBottomOf="@+id/ID_PW_RL" />
+
+    <TextView
+        android:id="@+id/ID_HA_RL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account?"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/ID_BT_RL"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/ID_BT_RL"
+        app:layout_constraintTop_toBottomOf="@+id/ID_BT_RL" />
+
+    <Button
+        android:id="@+id/ID_SP_AL"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/circular_button_photo"
+        android:text="select photo"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/ID_UN_RL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_color="@android:color/holo_green_dark"
+        app:civ_border_width="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ID_SP_AL"
+        app:layout_constraintEnd_toEndOf="@+id/ID_SP_AL"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ID_SP_AL"
+        app:layout_constraintTop_toTopOf="@+id/ID_SP_AL" />
+</androidx.constraintlayout.widget.ConstraintLayout>
